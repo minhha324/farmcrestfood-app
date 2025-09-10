@@ -1,0 +1,43 @@
+body {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 90%;
+}
+
+.dashboard-button,
+.camera-button,
+.reset-button,
+.overview-button {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    /* Removes underline from links */
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    -webkit-tap-highlight-color: transparent;
+    /* Removes tap highlight on mobile */
+}
+
+a:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
