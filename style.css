@@ -1,7 +1,12 @@
 body {
-    background-color: green;
+    background-color: beige;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .button-container {
@@ -37,7 +42,32 @@ body {
     /* Removes tap highlight on mobile */
 }
 
+@media (max-width: 600px) {
+    .app-button {
+        width: 120px;
+        height: 120px;
+        font-size: 16px;
+    }
+}
+
 a:hover {
     background-color: #45a049;
     transform: scale(1.05);
+}
+
+a:active {
+    transform: scale(0.95);
+}
+
+.dashboard-button {
+    background-color: #2196F3;
+}
+.camera-button{
+    background-color: #e6ac00;
+}
+.reset-button{
+    background-color: #f44336;
+}
+.overview-button{
+    background-color: #9C27B0;
 }
