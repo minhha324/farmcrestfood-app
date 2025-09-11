@@ -62,12 +62,24 @@ a:active {
 .dashboard-button {
     background-color: #2196F3;
 }
+.dashboard-button:hover {
+    background-color: #1e87db;
+}
 .camera-button{
+    background-color: #e6ac00;
+}
+.camera-button:hover {
     background-color: #e6ac00;
 }
 .reset-button{
     background-color: #f44336;
 }
+.reset-button:hover {
+    background-color: #da3730;
+}
 .overview-button{
     background-color: #9C27B0;
+}
+.overview-button:hover {
+    background-color: #8b21a0;
 }
